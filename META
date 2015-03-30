@@ -1,0 +1,5 @@
+name="stb_image_write"
+version="0.01"
+description="OCaml bindings to stb_image_write, a public domain image writer"
+archive(byte)="stb_image_write.cma"
+archive(native)="stb_image_write.cmxa"
