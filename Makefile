@@ -39,6 +39,8 @@ DIST_FILES=              \
 	stb_image_write.cma          \
 	stb_image_write.cmx          \
 	stb_image_write.cmxa         \
+	stb_image_write.ml           \
+	stb_image_write.mli          \
 	lib_stb_image_write_stubs.a  \
 	dll_stb_image_write_stubs.so
 
