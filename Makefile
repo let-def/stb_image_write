@@ -24,8 +24,7 @@ stb_image_write.cmx: stb_image_write.ml stb_image_write.cmi
 
 stb_image_write.cmxa stb_image_write.a: stb_image_write.cmx dll_stb_image_write_stubs.so
 	ocamlopt -a -o $@ $< \
-	      -cclib -l_stb_image_write_stubs \
-	  		-ccopt -O3 -ccopt -std=gnu99 -ccopt -ffast-math
+	      -cclib -l_stb_image_write_stubs
 
 .PHONY: clean install uninstall reinstall
 
