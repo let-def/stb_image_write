@@ -9,3 +9,11 @@ working OCaml and C compilers (stb\_image\_write is self-contained).
 $ make
 $ make install
 ```
+
+## CHANGELOG
+
+Version 0.2, Sun Nov 27 12:37:30 CET 2016
+  Update to stb\_image\_write.h v1.02
+
+Version 0.1, Fri Sep 18 20:53:03 CET 2015
+  Initial release
