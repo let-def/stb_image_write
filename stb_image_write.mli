@@ -7,7 +7,7 @@
   You should have received a copy of the CC0 legalcode along with this
   work. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
 
-  Website: https://github.com/def-lkb/stb_image_write
+  Website: https://github.com/let-def/stb_image_write
   stb_image_write is a public domain library by Sean Barrett,
   http://nothings.org/
   Version 0.1, September 2015
@@ -20,7 +20,7 @@ open Bigarray
 (** [buffer] simply is an alias to a bigarray with c_layout.
     Two kind of pixel buffers are manipulated:
     - int8 for images with 8-bit channels
-    - float32 for images with floating point channels 
+    - float32 for images with floating point channels
 
     Content of an image with [c] channels of width [w] and height [h] is
     represented as a contiguous sequence of items such that:

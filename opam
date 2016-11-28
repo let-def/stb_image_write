@@ -3,10 +3,10 @@ name: "stb_image_write"
 version: "0.2"
 maintainer: "Frederic Bour <frederic.bour@lakaban.net>"
 authors: "Frederic Bour <frederic.bour@lakaban.net>"
-homepage: "https://github.com/def-lkb/stb_image_write"
-bug-reports: "https://github.com/def-lkb/stb_image_write"
+homepage: "https://github.com/let-def/stb_image_write"
+bug-reports: "https://github.com/let-def/stb_image_write"
 license: "CC0"
-dev-repo: "https://github.com/def-lkb/stb_image_write.git"
+dev-repo: "https://github.com/let-def/stb_image_write.git"
 build: [
   [make]
 ]
