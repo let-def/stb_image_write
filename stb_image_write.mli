@@ -39,3 +39,4 @@ val png : string -> w:int -> h:int -> c:int -> int8 buffer -> unit
 val bmp : string -> w:int -> h:int -> c:int -> int8 buffer -> unit
 val tga : string -> w:int -> h:int -> c:int -> int8 buffer -> unit
 val hdr : string -> w:int -> h:int -> c:int -> float32 buffer-> unit
+val jpg : string -> w:int -> h:int -> c:int -> quality:int -> int8 buffer-> unit

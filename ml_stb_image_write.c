@@ -70,3 +70,23 @@ CAMLprim value ml_stbi_write_hdr(value filename, value w, value h, value comp, v
 
   CAMLreturn(Val_int(result));
 }
+
+CAMLprim value ml_stbi_write_jpg_native(value filename, value w, value h, value comp, value q, value ba)
+{
+  CAMLparam5(filename, w, h, comp, q);
+  CAMLxparam1(ba);
+  int result;
+
+  if (validate_dim(ba, w, h, comp, 1))
+    result = stbi_write_jpg(String_val(filename), Int_val(w), Int_val(h),
+        Int_val(comp), Caml_ba_data_val(ba), Int_val(q));
+  else
+    result = 0;
+
+  CAMLreturn(Val_int(result));
+}
+
+CAMLprim value ml_stbi_write_jpg_bytecode(value * argv, int nargs)
+{
+    return ml_stbi_write_jpg_native(argv[0], argv[1], argv[2], argv[3], argv[4], argv[5]);
+}
